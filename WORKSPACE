@@ -97,6 +97,8 @@ http_archive(
     urls = [
         "https://github.com/tensorflow/tensorflow/archive/v2.3.0.zip"
     ],
+    patches = ["//third_party/tensorflow:tf.patch"],
+    patch_args = ["-p1"],
 )
 
 http_archive(
